@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PlayGround
 //
-//  Created by DEV on 5/3/18.
-//  Copyright © 2018 DEV. All rights reserved.
+//  Created by Amila Kumara on 5/3/18.
+//  Copyright © 2018 Infor. All rights reserved.
 //
 
 import UIKit

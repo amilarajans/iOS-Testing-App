@@ -171,6 +171,10 @@
                                         <rect key="frame" x="0.0" y="368" width="343" height="245"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <accessibility key="accessibilityConfiguration" identifier="picker"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="QoR-nB-2ku" id="cMz-Xs-IrK"/>
+                                            <outlet property="delegate" destination="QoR-nB-2ku" id="dxi-x7-Cth"/>
+                                        </connections>
                                     </pickerView>
                                 </subviews>
                                 <constraints>

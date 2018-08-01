@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class FormController: UIViewController{
     @IBOutlet weak var lblSliderValue: UILabel!
     @IBOutlet weak var lblStepperValue: UILabel!
     @IBOutlet weak var slider: UISlider!
@@ -47,6 +47,12 @@ class FormController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         lblStepperValue.text = nf.string(from: NSNumber(value: stepper.value))
     }
     
+    @IBAction func tapChangeName(_ sender: Any) {
+        txtName.text = "Krypton"
+    }
+    
+}
+extension FormController:UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -58,9 +64,5 @@ class FormController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
-    @IBAction func tapChangeName(_ sender: Any) {
-        txtName.text = "Krypton"
-    }
-    
 }
 
